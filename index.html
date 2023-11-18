@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Invernadero</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <div id="bloque1">
+        <!--Título de la página-->
+        <div id="titulo">
+            <h1>La Carrera de las Plantas</h1>
+        </div>
+        
+        <!--INVERNADERO-->
+        <div id="invernadero">
+            <div id="plantas">
+                <div class="plantainv" id="planta1">
+                    <img src="img/planta1.png">
+                </div>
+                <div class="plantainv" id="planta2">
+                    <img src="img/planta2.png">
+                </div>
+                <div class="plantainv" id="planta3">
+                    <img src="img/planta3.png">
+                </div>
+                <div class="plantainv" id="planta4">
+                    <img src="img/planta4.png">
+                </div>
+                <div class="plantainv" id="planta5">
+                    <img src="img/planta5.png">
+                </div>
+                <div class="plantainv" id="planta6">
+                    <img src="img/planta6.png">
+                </div>
+            </div>
+        </div>
+
+        <!--SELECTOR DE PARTICIPANTES-->
+        <div id="selector">
+            <label for="nplantas">Número de Participantes:</label>
+            <select id="nplantas" onchange="mostrarDivs()">
+                <option value="" disabled selected style="display:none;">Selecciona una opción</option>
+                <option value="1">1 planta</option>
+                <option value="2">2 plantas</option>
+                <option value="3">3 plantas</option>
+                <option value="4">4 plantas</option>
+                <option value="5">5 plantas</option>
+                <option value="6">6 plantas</option>
+            </select>
+        </div>
+
+        <!--BOTONES DE INICIO Y REPLANTAR-->
+        <button  id="iniciar" onclick="iniciarCrecimiento()">INICIAR </button>
+        <button  id="replantar" onclick="replantar()">REPLANTAR</button>
+    </div>
+
+    <aside id="bloque2">
+        
+        <p>Podio</p>
+
+        <div id="podio">
+            <div>
+                <img class="plantapodio" id="plantapodio1" src="img/planta1.png">
+            </div>
+            <div>
+                <img class="plantapodio" id="plantapodio2" src="img/planta2.png">
+            </div>
+            <div>
+                <img class="plantapodio" id="plantapodio3" src="img/planta3.png">
+            </div>
+            <div>
+                <img class="plantapodio" id="plantapodio4" src="img/planta4.png">
+            </div>
+            <div>
+                <img class="plantapodio" id="plantapodio5" src="img/planta5.png">
+            </div>
+            <div>
+                <img class="plantapodio" id="plantapodio6" src="img/planta6.png">
+            </div>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>

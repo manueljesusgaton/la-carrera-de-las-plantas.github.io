@@ -1,0 +1,246 @@
+/*FUENTES*/
+
+@font-face {
+    font-family: 'caveat-bold';
+    src: url(fonts/Caveat-Bold.ttf);
+}
+@font-face {
+    font-family: 'caveat-regular';
+    src: url(fonts/Caveat-Regular.ttf);
+}
+
+/*GENERAL*/
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'caveat-bold';
+}
+
+body{
+    background-image:url(img/patterm.jpg) ;
+}
+
+#bloque1{
+    display: block;
+    float: left;
+    padding: 25px;
+    margin-left: 80px;
+    margin-right: 60px;
+    height: 1050px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/*TITULO*/
+#titulo{
+    margin: 0 auto;
+    width: 400px;
+    height: 60px;
+    line-height:50px;
+    border-radius:50px;
+    border: 20px solid rgb(241, 240, 236);
+    box-shadow: 0px 0px 10px rgb(26, 25, 25);
+    background-color: rgb(255, 211, 172);
+    text-align: center;
+    color: rgb(22, 52, 23);
+    font-size: 20px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+}
+
+/*INVERNADERO*/
+#invernadero{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 800px;
+    height: 400px;
+    border: 20px solid rgb(241, 240, 236);
+    box-shadow: 0px 0px 10px rgb(26, 25, 25);
+    border-radius: 60px;
+    background-image: url(img/invernadero1.jpg);
+}
+
+#plantas img{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+#plantas{
+    display: flex;
+    justify-content: center;
+}
+
+.plantainv{
+    display: none;
+    float: left;
+    width: 80px;
+    height: 100px;
+    margin-top: 300px;/*ESTO TIENE QUE IR DISMINULLENDO HASTA*/
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(124, 182, 99);
+    border-radius: 10px 10px 0px 0px;
+    transition:all 5ms ;
+    -webkit-transition:all 5ms ;
+    -moz-transition:all 5ms ;
+    -ms-transition:all 5ms ;
+    -o-transition:all 5ms ;
+}
+
+/*SELECTOR DE PLANTAS*/
+#selector{
+    margin-top: 20px;
+    background-color: rgb(255, 211, 172);
+    height: 50px;
+    width: 500px;
+    border: 20px solid rgb(241, 240, 236);
+    box-shadow: 0px 0px 10px rgb(26, 25, 25);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+#selector label{
+    color: rgb(22, 52, 23);
+    font-size: 30px;
+    line-height:43px;
+    margin-left: 30px;
+}
+#nplantas{
+    font-size: 20px;
+    margin-left:15PX;
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(22, 52, 23);
+    background-color: rgb(255, 211, 172);
+    border-color: rgb(22, 52, 23);
+    border-radius: 25px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#nplantas:hover{
+    box-shadow: 0px 0px 5px rgb(26, 25, 25); 
+}
+
+/*BOTONES*/
+#iniciar{
+    z-index: 1;
+    background-color: rgb(255, 211, 172);
+    color: rgb(22, 52, 23);
+    cursor: pointer;
+    position: absolute;
+    top: 625px;
+    left: 660px;
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(26, 25, 25);
+    font-size: 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+#iniciar:hover{
+    font-size:23px ;
+}
+
+#replantar{
+    background-color: rgb(22, 52, 23);
+    color: rgb(255, 211, 172);
+    position: absolute;
+    top: 625px;
+    left: 660px;
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(26, 25, 25);
+    font-size: 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+#replantar:hover{
+    font-size:23px ;
+}
+
+/*PODIO*/
+#bloque2{
+    float: left;
+    height: 1100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width:240px;
+    text-align: center;
+}
+
+#podio{
+    min-height: 350px;
+    width: 70px;
+    padding: 30px;
+    margin-left: 35PX;
+    margin-top: 20px;
+    background-color: rgb(255, 211, 172);
+    border: 20px solid rgb(241, 240, 236);
+    box-shadow: 0px 0px 10px rgb(26, 25, 25);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+#podio img{
+    display: none;
+    height: 48px;
+    width: 48px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#bloque2> p{
+    width: 130px;
+    height: 60px;
+    margin-left: 30px;
+    line-height:50px;
+    margin-top: 20px;
+    border-radius:50px;
+    border: 20px solid rgb(241, 240, 236);
+    box-shadow: 0px 0px 10px rgb(26, 25, 25);
+    background-color: rgb(255, 211, 172);
+    color: rgb(22, 52, 23);
+    font-size: 40px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+}
